@@ -1,0 +1,1 @@
+/** * Created by liudandan on 20163/26. */let mongoose=require('mongoose');//链接数据库mongoose.connect('mongodb://127.0.0.1/201614node');//定义模型骨架var MoviesSchema=new mongoose.Schema({    name:String,    url:String,})//定义模型module.exports=mongoose.model('Movies',MoviesSchema);
